@@ -13,5 +13,5 @@ int main(void)
 	for (ch = 'A'; ch <= 'Z'; ch++)
 		putchar(ch);
 	putchar('\n'); /* New line at the end */
-	return (0);
+	return 0;
 }
