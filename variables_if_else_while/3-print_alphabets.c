@@ -1,7 +1,5 @@
 #include <stdio.h>
-/**
-* File:   3-print_alphabets.c*
-**/ 
+
 int main(void)
 {
 	char ch;
