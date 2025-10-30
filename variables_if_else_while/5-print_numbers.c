@@ -12,8 +12,5 @@ int main()
 
 	for (num = 0; num <= 10; num++) 
 		printf("%d\n", num);
-		
-	printf("Finished printing numbers from 0 to 10.\n");
-
 	return (0);
 }
