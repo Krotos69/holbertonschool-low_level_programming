@@ -2,7 +2,7 @@
 /**
  * main - Entry point working with putchar
  * Return: Always 0 (Success)
- * Description: Prints all the numbers of base 16 in lowercase 
+ * Description: Prints all the numbers of base 16 in lowercase
  * base 16 is hexadecimal
  */
 int main(void)
