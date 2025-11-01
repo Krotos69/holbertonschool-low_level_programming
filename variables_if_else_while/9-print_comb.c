@@ -1,5 +1,6 @@
 #include <stdio.h>
-/**prints all possible combinations of single-digit numbers
+/**
+ * prints all possible combinations of single-digit numbers
  * main - Entry point working with putchar
  * Return: Always 0 (Success)
  */
