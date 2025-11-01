@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * prints all possible combinations of single-digit numbers
  * main - Entry point working with putchar
+ * prints all possible combinations of single-digit numbers
  * Return: Always 0 (Success)
  */
+
 int main(void)
 
 {
