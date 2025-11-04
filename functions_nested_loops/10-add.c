@@ -3,7 +3,6 @@
  * add - adds two integers together
  * @a:first integer.
  * @b:second integer.
- * 
  * Return: sum of @a and @b
  */
 int add(int a, int b)
