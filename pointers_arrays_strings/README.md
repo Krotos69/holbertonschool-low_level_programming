@@ -1,1 +1,1 @@
- this is the READEME FOR C - Pointers, arrays and strings
+s is the README OF More pointers, arrays and strings
