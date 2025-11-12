@@ -7,7 +7,7 @@
  * @s2: second string to compare
  *
  * description: compares the two strings character by character
- * Return: an integer less than, equal to, or greater than zero
+ * Return an integer less than, equal to, or greater than zero
  *         if s1 is found, respectively, to be less than, to match,
  *         or be greater than s2
  *
