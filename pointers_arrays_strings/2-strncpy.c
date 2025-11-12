@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strcpy - copies a string
+ * _strncpy - copies a string
  * @dest: pointer to the destination array where the content is to be copied
  * @src: string to be copied
  * Return: pointer to the destination string dest
