@@ -5,9 +5,9 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0; i <= n; i++) /*loop through n bytes*/
+	for (i = 0; i < n; i++)
 	{
-		dest[i] = src[i]; /*copia cada byte del source hacia el destino*/
+		dest[i] = src[i];
 	}
-	return (dest); /*return pointer to destination memory*/
+	return (dest);
 }
