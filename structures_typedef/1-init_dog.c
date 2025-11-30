@@ -2,8 +2,8 @@
 #include <stddef.h>
 #include <stdio.h>
 
-/*
-* init_dog - Initializes a variable of type struct dog.
+/**
+* @init_dog: Initializes a variable of type struct dog.
 * @d: Pointer to the name to assign.
 * @age: age to assing.
 * @owner: pointer to the owner's name to assing.
