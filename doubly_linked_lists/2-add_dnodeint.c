@@ -3,8 +3,8 @@
 
 /**
 * add_dnodeint - Adds a new node at the beginning of a dlisting_t list.
-@head: Double pointer to the head of the doubly linked list.
-@n: integer to be added to the new node.
+*@head: Double pointer to the head of the doubly linked list.
+*@n: integer to be added to the new node.
 *
 * Return: Address of the new node, or NULL if it failed.
 */
