@@ -1,0 +1,1 @@
+this is the first READEME OF The I/O system calls open, close, read, and write are commonly used in programming to interact with files and perform input/output operations. Here's an overview of how to use these system calls: open, read & write.
