@@ -4,8 +4,8 @@
 #include "main.h"
 
 /**
-*is number - checks if a string is a valid number
-*@s: string to check
+*is_number - checks if a string is a valid number
+*@str: string to check
 *Return: 1 if valid number, 0 otherwise
 */
 int is_number(char *str)
