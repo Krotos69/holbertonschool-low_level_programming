@@ -6,12 +6,13 @@
 *main - entry point of the program
 *@argc: argument count
 *@argv: argument vector
-*return: 0 if successful, 1 if  there are not exactly two arguments 
- */
+*return: 0 if successful, 1 if  there are not exactly two arguments
+*/
 int main(int argc, char *argv[])
 
 {
 	int num1, num2, result;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
