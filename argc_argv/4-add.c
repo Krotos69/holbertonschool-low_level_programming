@@ -22,7 +22,9 @@ int is_number(char *str)
 	}
 	return (1);
 }
-/***main - entry point of the program
+
+/**
+*main - entry point of the program
 *@argc: argument count
 *@argv: argument vector
 *Return: 0 if successful, 1 if tan argument contains non-digit characters
@@ -30,7 +32,9 @@ int is_number(char *str)
 int main(int argc, char *argv[])
 {
 	int i, sum = 0, num;
+
 	for (i = 1; i < argc; i++)
+
 	{
 		if (!is_number(argv[i]))
 		{
