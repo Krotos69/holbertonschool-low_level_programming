@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
-* @init_dog: Initializes a variable of type struct dog.
+* init_dog - Initializes a variable of type struct dog
 * @d: Pointer to struct dog to initialize
 * @age: age to assing
-* @owner: pointer to the owner's name to assing
-* @name: name to assign to the dog
+* @owner: pointer to the owner string
+* @name: pointer to the owner string
 *
 *Description: this function assing values to the fields struct dog.
-* If the pointer is NULL, the function does nothing.
+* If the pointer d is NULL, the function does nothing.
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
