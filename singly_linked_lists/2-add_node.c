@@ -30,3 +30,16 @@ list_t *add_node(list_t **head, const char *str)
 
 	return (new_node); /* Return the address of the new element */
 }
+/**
+*_strlen- calcula la longitud de una cadena
+*@s: puntero a la cadena
+*Return: longitud de la cadena
+*/
+unsigned int _strlen(const char *s)
+{
+	unsigned int len = 0;
+
+	while (s[len] != '\0')
+		len++;
+	return (len);
+}
