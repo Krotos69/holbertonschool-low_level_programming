@@ -2,6 +2,13 @@
 #include <string.h>
 #include "lists.h"
 
+/**
+* _strlen - calculates the length of a string
+* @s: input string
+*
+* Return: number of characters in the string
+*/
+
 int _strlen(const char *s)
 {
 	int len = 0;
