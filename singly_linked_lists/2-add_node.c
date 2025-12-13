@@ -1,47 +1,72 @@
 #include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
-*_strlen- calcula la longitud de una cadena
-*@s: puntero a la cadena
-*Return: longitud de la cadena
-*/
+ * _strlen - calcula la longitud de una cadena
+ * @s: puntero a la cadena
+ * Return: longitud de la cadena
+ */
 unsigned int _strlen(const char *s)
 {
 	unsigned int len = 0;
 
 	while (s[len] != '\0')
 		len++;
+
 	return (len);
 }
 
 /**
- * add_node - adds a new node at the beginning of a list_t list
- * @head: pointer to the pointer to the head of the list_t list
- * @str: string to be added to the new node
- * Return: address of the new element, or NULL if it failed
+ * _strdup - duplica una cadena en memoria nueva
+ * @s: cadena a duplicar
+ * Return: puntero a la nueva cadena, o NULL si falla
  */
-
-list_t *add_node(list_t **head, const char *str)
+char *_strdup(const char *s)
 {
-	list_t *new_node; /* Pointer to the new node */
+	char *dup;
+	unsigned int i, len;
 
-	new_node = malloc(sizeof(list_t)); /* Allocate memory for the new node */
-	if (new_node == NULL) /* Check if memory allocation was successful */
+	if (s == NULL)
 		return (NULL);
 
-	new_node->str = strdup(str); /* Duplicate the string into the new node */
-	if (new_node->str == NULL) /* Check if string duplication was successful */
+	len = _strlen(s);
+
+	dup = malloc(sizeof(char) * (len + 1)); /* +1 para el terminador */
+	if (dup == NULL)
+		return (NULL);
+
+	for (i = 0; i < len; i++)
+	dup[i] = s[i];
+
+	dup[len] = '\0'; /* terminador */
+
+	return (dup);
+}
+
+/**
+ * add_node - añade un nuevo nodo al inicio de una lista list_t
+ * @head: puntero al puntero de la cabeza de la lista
+ * @str: cadena que se añadirá al nuevo nodo
+ * Return: dirección del nuevo elemento, o NULL si falla
+ */
+list_t *add_node(list_t **head, const char *str)
+{
+	list_t *new_node;
+
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
+		return (NULL);
+
+	new_node->str = _strdup(str); /* usamos nuestra propia versión */
+	if (new_node->str == NULL)
 	{
-		free(new_node); /* Free the allocated memory for the node */
+		free(new_node);
 		return (NULL);
 	}
 
-	new_node->len = strlen(str); /* Set the length of the string */
-	new_node->next = *head; /* Point the new node to the current head */
-	*head = new_node; /* Update the head to point to the new node */
+	new_node->len = _strlen(str);
+	new_node->next = *head;
+	*head = new_node;
 
-	return (new_node); /* Return the address of the new element */
+	return (new_node);
 }
