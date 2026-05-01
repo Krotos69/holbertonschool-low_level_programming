@@ -7,7 +7,7 @@
  */
 
  size_t print_list(const list_t *h)
- {
+{
 	size_t count = 0; /* Count de nodos */
 	while (h)
 	{
@@ -16,4 +16,4 @@
 		h = h->next; /* Avanza al siguiente nodo */
 	}
 	return (count); /* Retorna el numero de nodos */
- }
+}

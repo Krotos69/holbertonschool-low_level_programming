@@ -17,4 +17,5 @@ public class Node{
         this.next = null;
     }
 }
-In this example, the Node class contains an integer data field (data) to store the information and a pointer to another Node (next) to establish the link to the next node in the list.
+In this example, the Node class contains an integer data field (data) to store the information and a pointer to another Node (next) to establish the link to the next node in the list
+.

@@ -9,8 +9,9 @@
  * @head: pointer to the head of the list_t list
  * Return: Always 0.
  */
- 
+
 int main(void)
+
 {
     list_t *head;
 
